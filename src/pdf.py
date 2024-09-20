@@ -3,10 +3,10 @@ nest_asyncio.apply()
 
 from llama_parse import LlamaParse
 from llama_parse.base import Document
-from py_dotenv import read_dotenv
+# from py_dotenv import read_dotenv
 import os
 
-read_dotenv(os.path.join(os.path.dirname(__file__), '../.env'))
+# read_dotenv(os.path.join(os.path.dirname(__file__), '../.env'))
 
 async def parse_file(file: bytes, file_name: str) -> list[Document]:
     documents = None

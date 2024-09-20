@@ -1,5 +1,5 @@
 import streamlit as st
-from py_dotenv import read_dotenv
+# from py_dotenv import read_dotenv
 import os
 
 import ai
@@ -10,7 +10,7 @@ nest_asyncio.apply()
 
 import asyncio
 
-read_dotenv(os.path.join(os.path.dirname(__file__), '../.env'))
+# read_dotenv(os.path.join(os.path.dirname(__file__), '../.env'))
 
 st.set_page_config(page_title="School.ai")
 st.title("Easier way to study i guess")

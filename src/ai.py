@@ -1,9 +1,9 @@
 from groq import Groq
 from pydantic import BaseModel
-from py_dotenv import read_dotenv
+# from py_dotenv import read_dotenv
 import os, sys
 
-read_dotenv(os.path.join(os.path.dirname(__file__), '../.env'))
+# read_dotenv(os.path.join(os.path.dirname(__file__), '../.env'))
 
 def prompt(prompt: str, model: str, documents: any) -> BaseModel:
     client = Groq()
